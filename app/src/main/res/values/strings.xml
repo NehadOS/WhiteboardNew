@@ -1,6 +1,10 @@
 <resources>
     <string name="app_name">Whiteboard</string>
-    <string name="loginUsername">Username</string>
+    <string name="loginUsername">StudentID@brunel.ac.uk</string>
     <string name="loginPassword">Password</string>
     <string name="loginSubmit">Submit</string>
+    <string name="newName">Name</string>
+    <string name="email">StudentID@brunel.ac.uk</string>
+    <string name="newPassword">**********</string>
+
 </resources>
