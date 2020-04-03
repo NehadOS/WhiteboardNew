@@ -6,5 +6,15 @@
     <string name="newName">Name</string>
     <string name="email">StudentID@brunel.ac.uk</string>
     <string name="newPassword">**********</string>
+    <string name="checkParking">Check Parking</string>
+    <string name="checkTimetable">Check Timetable</string>
+    <string name="trackAttendance">Track Attendance</string>
+    <string name="checkAvailableFriends">Check Available Friends</string>
+    <string name="checkDeadlines">Check Deadlines</string>
+    <string name="checkModules">Check Modules</string>
+    <string name="checkNotes">Check Notes</string>
+    <string name="mainMenu">Main Menu</string>
+    <string name="notAUserYet">Main Menu</string>
+
 
 </resources>

@@ -11,9 +11,8 @@
         android:layout_width="wrap_content"
         android:layout_height="41dp"
         android:layout_marginStart="100dp"
-        android:layout_marginLeft="100dp"
         android:layout_marginTop="100dp"
-        android:text="Check Available Friends"
+        android:text="@string/checkAvailableFriends"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -22,9 +21,8 @@
         android:layout_width="206dp"
         android:layout_height="41dp"
         android:layout_marginStart="100dp"
-        android:layout_marginLeft="100dp"
         android:layout_marginTop="20dp"
-        android:text="Check Deadlines"
+        android:text="@string/checkDeadlines"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/checkAvailableFriends" />
 
@@ -33,9 +31,8 @@
         android:layout_width="206dp"
         android:layout_height="41dp"
         android:layout_marginStart="100dp"
-        android:layout_marginLeft="100dp"
         android:layout_marginTop="20dp"
-        android:text="Check Modules"
+        android:text="@string/checkModules"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/checkDeadlines" />
 
@@ -44,9 +41,8 @@
         android:layout_width="206dp"
         android:layout_height="41dp"
         android:layout_marginStart="100dp"
-        android:layout_marginLeft="100dp"
         android:layout_marginTop="20dp"
-        android:text="Check Notes"
+        android:text="@string/checkNotes"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/checkModules" />
 
@@ -55,9 +51,8 @@
         android:layout_width="206dp"
         android:layout_height="41dp"
         android:layout_marginStart="100dp"
-        android:layout_marginLeft="100dp"
         android:layout_marginTop="20dp"
-        android:text="Check Parking"
+        android:text="@string/checkParking"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/checkNotes" />
 
@@ -66,9 +61,8 @@
         android:layout_width="206dp"
         android:layout_height="41dp"
         android:layout_marginStart="100dp"
-        android:layout_marginLeft="100dp"
         android:layout_marginTop="20dp"
-        android:text="Check Timetable"
+        android:text="@string/checkTimetable"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/checkParking" />
 
@@ -77,9 +71,8 @@
         android:layout_width="206dp"
         android:layout_height="41dp"
         android:layout_marginStart="100dp"
-        android:layout_marginLeft="100dp"
         android:layout_marginTop="20dp"
-        android:text="Track Attendance"
+        android:text="@string/trackAttendance"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/checkTimetable" />
 
@@ -88,9 +81,8 @@
         android:layout_width="206dp"
         android:layout_height="41dp"
         android:layout_marginStart="100dp"
-        android:layout_marginLeft="100dp"
         android:lineSpacingExtra="10sp"
-        android:text="     Main Menu"
+        android:text="@string/mainMenu"
         android:textSize="30sp"
         android:textStyle="bold"
         app:fontFamily="sans-serif-condensed-medium"
