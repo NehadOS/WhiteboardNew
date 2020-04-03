@@ -3,14 +3,14 @@ package com.example.whiteboardnew;
 import android.content.Context;
 import android.widget.Toast;
 
-public class CredentialsValidation {
-    static Context ctx;
+class CredentialsValidation {
+    Context ctx;
 
-    public CredentialsValidation(Context ct){
+    CredentialsValidation(Context ct){
         this.ctx = ct;
     }
 
-    public static boolean emailValidation(String email) {
+    boolean emailValidation(String email) {
         if (email.contains("@")) {
             if (email.endsWith(".com") || email.endsWith(".uk")) {
                 return true;
@@ -27,7 +27,7 @@ public class CredentialsValidation {
 
 
 
-    public static boolean passwordValidation(String pass, String confirmPass) {
+    boolean passwordValidation(String pass, String confirmPass) {
         if (pass.length() >= 6) {
             if (pass.equals(confirmPass)) {
                 return true;
@@ -41,7 +41,7 @@ public class CredentialsValidation {
         }
     }
 
-    public static boolean passwordValidation(String pass) {
+    boolean passwordValidation(String pass) {
         if (pass.length() >= 6) {
             return true;
         } else {

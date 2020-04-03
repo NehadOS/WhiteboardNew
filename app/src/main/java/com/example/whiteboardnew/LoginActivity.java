@@ -36,9 +36,9 @@ public class LoginActivity extends AppCompatActivity {
         loginSubmit.setOnClickListener(v -> {
             String username = loginUsername.getText().toString().isEmpty() ? "" : loginUsername.getText().toString();
             String password = loginPassword.getText().toString().isEmpty() ? "" : loginPassword.getText().toString();
-            new CredentialsValidation(this);
-            if (CredentialsValidation.emailValidation(username)) {
-                if (CredentialsValidation.passwordValidation(password)) {
+            CredentialsValidation cv = new CredentialsValidation(this);
+            if (cv.emailValidation(username)) {
+                if (cv.passwordValidation(password)) {
                     mAuth.signInWithEmailAndPassword(username, password)
                             .addOnCompleteListener(LoginActivity.this, task -> {
                                 if (task.isSuccessful()) {
