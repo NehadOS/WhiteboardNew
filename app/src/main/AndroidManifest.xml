@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <meta-data android:name="com.google.android.geo.API_KEY" android:value="your API key"/>
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyBdTl6cn-JuFN4FRHzt0EpyY9QYysjpblc"/>
         <activity android:name="com.example.whiteboardnew.Main_menu" />
         <activity android:name="com.example.whiteboardnew.SetUpProfileActivity" />
         <activity android:name="com.example.whiteboardnew.TrackAttendanceActivity" />
