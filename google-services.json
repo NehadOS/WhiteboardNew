@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "349787875125",
+    "firebase_url": "https://parkingthing-81810.firebaseio.com",
+    "project_id": "parkingthing-81810",
+    "storage_bucket": "parkingthing-81810.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:349787875125:android:cfaf624bdaf76ff506ce7c",
+        "android_client_info": {
+          "package_name": "com.example.whiteboard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "349787875125-03qd86167qqe5a7l0lrhuits74bd5p0f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOpTNwWWh6nDCnxakRdI08xgZacWXS-xs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "349787875125-03qd86167qqe5a7l0lrhuits74bd5p0f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
