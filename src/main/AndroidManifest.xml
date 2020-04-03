@@ -1,33 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.whiteboardnew">
+    package="com.example.whiteboard"
+    android:targetSandboxVersion="2"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="29" />
 
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".Main_menu"></activity>
-        <activity android:name=".SetUpProfileActivity" />
-        <activity android:name=".TrackAttendanceActivity" />
-        <activity android:name=".CheckAvailableFriendActivity" />
-        <activity android:name=".CheckParkingActivity" />
-        <activity android:name=".CheckNotesActivity" />
-        <activity android:name=".CheckDeadlinesActivity" />
-        <activity android:name=".CheckModulesActivity" />
-        <activity android:name=".CheckTimetableActivity" />
-        <activity android:name=".LoginActivity">
+        android:testOnly="true"
+        android:theme="@style/AppTheme" >
+        <activity android:name="com.example.whiteboardnew.Main_menu" />
+        <activity android:name="com.example.whiteboardnew.SetUpProfileActivity" />
+        <activity android:name="com.example.whiteboardnew.TrackAttendanceActivity" />
+        <activity android:name="com.example.whiteboardnew.CheckAvailableFriendActivity" />
+        <activity android:name="com.example.whiteboardnew.CheckParkingActivity" />
+        <activity android:name="com.example.whiteboardnew.CheckNotesActivity" />
+        <activity android:name="com.example.whiteboardnew.CheckDeadlinesActivity" />
+        <activity android:name="com.example.whiteboardnew.CheckModulesActivity" />
+        <activity android:name="com.example.whiteboardnew.CheckTimetableActivity" />
+        <activity android:name="com.example.whiteboardnew.LoginActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>
