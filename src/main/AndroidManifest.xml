@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.whiteboardnew">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,16 +11,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SetUpProfileActivity"></activity>
-        <activity android:name=".MainActivity" />
-        <activity android:name=".Main_menu" />
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".CheckTimetableActivity" />
+        <activity android:name=".Main_menu"></activity>
+        <activity android:name=".SetUpProfileActivity" />
+        <activity android:name=".TrackAttendanceActivity" />
+        <activity android:name=".CheckAvailableFriendActivity" />
         <activity android:name=".CheckParkingActivity" />
         <activity android:name=".CheckNotesActivity" />
-        <activity android:name=".CheckModulesActivity" />
         <activity android:name=".CheckDeadlinesActivity" />
-        <activity android:name=".CheckAvailableFriendActivity" />
+        <activity android:name=".CheckModulesActivity" />
+        <activity android:name=".CheckTimetableActivity" />
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>
