@@ -24,25 +24,11 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Objects;
 
 public class CheckParkingActivity extends AppCompatActivity implements OnMapReadyCallback {
 
-    private final String PARKING_SOUTH_1 = "Elliott Jaques Parking";  // new LatLng(51.532335, -0.467996)
-    private final String PARKING_SOUTH_2 = "Russell Parking";  // new LatLng(51.531698, -0.468975)
-    private final String PARKING_SOUTH_3 = "South loop road parking";  // new LatLng(51.530907, -0.471785)
-    private final String PARKING_SOUTH_4 = "Medical Centre/Tower D parking ";  // new LatLng(51.531023, -0.472384)
-    private final String PARKING_SOUTH_5 = "Joseph Lowe/Tower C Parking";  // new LatLng(51.530973, -0.472250)
-    private final String PARKING_SOUTH_6 = "Wilfred Brown Parking";  // new LatLng(51.531793, -0.475562)
-    private final String PARKING_SOUTH_7 = "Gaskell Parking";  // new LatLng(51.532899, -0.477520)
-    private final String PARKING_NORTH_1 = "Chadwick Parking";  // new LatLng(51.533773, -0.478987)
-    private final String PARKING_NORTH_2 = "Topping Lane Parking";  // new LatLng(51.533880, -0.477136)
-    private final String PARKING_NORTH_3 = "Heinz Wolff Parking";  // new LatLng(51.534443, -0.475392)
-    private final String PARKING_NORTH_4 = "North Loop Road Parking";  // new LatLng(51.534562, -0.473971)
-    private final String PARKING_NORTH_5 = "Bragg Parking";  // new LatLng(51.534746, -0.472576)
-    private final String PARKING_NORTH_6 = "Wolfson Centre Parking";  // new LatLng(51.534532, -0.472266)
-    private final String PARKING_NORTH_7 = "The Quad Parking";  // new LatLng(51.533785, -0.471722)
-    private final String PARKING_NORTH_8 = "St Johns Parking";  // new LatLng(51.534059, -0.470679)
-    private final String PARKING_NORTH_9 = "Eastern Gateway Parking";  // new LatLng(51.534137, -0.470028)
+   // private final String PARKING_NORTH_9 = "Eastern Gateway Parking";  // new LatLng(51.534137, -0.470028)
 
     private final LatLng PARKING_SOUTH_1_LATLNG = new LatLng(51.532335, -0.467996);
     private final LatLng PARKING_SOUTH_2_LATLNG = new LatLng(51.531698, -0.468975);
@@ -75,20 +61,50 @@ public class CheckParkingActivity extends AppCompatActivity implements OnMapRead
         coordsWithNames = new HashMap<>();
         buildingCoord = new HashMap<>();
 
+        // new LatLng(51.532335, -0.467996)
+        String PARKING_SOUTH_1 = "Elliott Jaques Parking";
         coordsWithNames.put(PARKING_SOUTH_1_LATLNG, PARKING_SOUTH_1);
+        // new LatLng(51.531698, -0.468975)
+        String PARKING_SOUTH_2 = "Russell Parking";
         coordsWithNames.put(PARKING_SOUTH_2_LATLNG, PARKING_SOUTH_2);
+        // new LatLng(51.530907, -0.471785)
+        String PARKING_SOUTH_3 = "South loop road parking";
         coordsWithNames.put(PARKING_SOUTH_3_LATLNG, PARKING_SOUTH_3);
+        // new LatLng(51.531023, -0.472384)
+        String PARKING_SOUTH_4 = "Medical Centre/Tower D parking ";
         coordsWithNames.put(PARKING_SOUTH_4_LATLNG, PARKING_SOUTH_4);
+        // new LatLng(51.530973, -0.472250)
+        String PARKING_SOUTH_5 = "Joseph Lowe/Tower C Parking";
         coordsWithNames.put(PARKING_SOUTH_5_LATLNG, PARKING_SOUTH_5);
+        // new LatLng(51.531793, -0.475562)
+        String PARKING_SOUTH_6 = "Wilfred Brown Parking";
         coordsWithNames.put(PARKING_SOUTH_6_LATLNG, PARKING_SOUTH_6);
+        // new LatLng(51.532899, -0.477520)
+        String PARKING_SOUTH_7 = "Gaskell Parking";
         coordsWithNames.put(PARKING_SOUTH_7_LATLNG, PARKING_SOUTH_7);
+        // new LatLng(51.533773, -0.478987)
+        String PARKING_NORTH_1 = "Chadwick Parking";
         coordsWithNames.put(PARKING_NORTH_1_LATLNG, PARKING_NORTH_1);
+        // new LatLng(51.533880, -0.477136)
+        String PARKING_NORTH_2 = "Topping Lane Parking";
         coordsWithNames.put(PARKING_NORTH_2_LATLNG, PARKING_NORTH_2);
+        // new LatLng(51.534443, -0.475392)
+        String PARKING_NORTH_3 = "Heinz Wolff Parking";
         coordsWithNames.put(PARKING_NORTH_3_LATLNG, PARKING_NORTH_3);
+        // new LatLng(51.534562, -0.473971)
+        String PARKING_NORTH_4 = "North Loop Road Parking";
         coordsWithNames.put(PARKING_NORTH_4_LATLNG, PARKING_NORTH_4);
+        // new LatLng(51.534746, -0.472576)
+        String PARKING_NORTH_5 = "Bragg Parking";
         coordsWithNames.put(PARKING_NORTH_5_LATLNG, PARKING_NORTH_5);
+        // new LatLng(51.534532, -0.472266)
+        String PARKING_NORTH_6 = "Wolfson Centre Parking";
         coordsWithNames.put(PARKING_NORTH_6_LATLNG, PARKING_NORTH_6);
+        // new LatLng(51.533785, -0.471722)
+        String PARKING_NORTH_7 = "The Quad Parking";
         coordsWithNames.put(PARKING_NORTH_7_LATLNG, PARKING_NORTH_7);
+        // new LatLng(51.534059, -0.470679)
+        String PARKING_NORTH_8 = "St Johns Parking";
         coordsWithNames.put(PARKING_NORTH_8_LATLNG, PARKING_NORTH_8);
 
         parkingMap.put("Marry Seacole", new LatLng[]{PARKING_SOUTH_1_LATLNG, PARKING_SOUTH_2_LATLNG});                  // "Marry Seacole"            51.532737, -0.468488 (LatLng)  PS1 - 121 feets; PS2 - 328 feets
@@ -154,7 +170,7 @@ public class CheckParkingActivity extends AppCompatActivity implements OnMapRead
         buildingCoord.put("Arts centre", new LatLng(51.532995, -0.472094));
 
         List<String> allBuildings = new ArrayList<>(parkingMap.keySet());
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(
                 this, android.R.layout.simple_spinner_item, allBuildings);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
@@ -165,21 +181,24 @@ public class CheckParkingActivity extends AppCompatActivity implements OnMapRead
                 mMap.clear();
                 String nameOfBuilding = sItems.getSelectedItem().toString();
                 LatLng[] closeParkings = parkingMap.get(nameOfBuilding);
+
+                assert closeParkings != null;
                 for (LatLng coord : closeParkings) {
+
                     Marker parkingSpot = mMap.addMarker(new MarkerOptions()
                             .position(coord)
                             .title(coordsWithNames.get(coord))
                             .snippet("Distance: " + distance(coord.latitude,
-                                    buildingCoord.get(nameOfBuilding).latitude,
+                                    Objects.requireNonNull(buildingCoord.get(nameOfBuilding)).latitude,
                                     coord.longitude,
-                                    buildingCoord.get(nameOfBuilding).longitude,
+                                    Objects.requireNonNull(buildingCoord.get(nameOfBuilding)).longitude,
                                     TERRAIN_ELEVATION,
                                     TERRAIN_ELEVATION) + "m").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE)));
                     parkingSpot.showInfoWindow();
                 }
 
                 Marker lessonBuilding = mMap.addMarker(new MarkerOptions()
-                        .position(buildingCoord.get(nameOfBuilding))
+                        .position(Objects.requireNonNull(buildingCoord.get(nameOfBuilding)))
                         .title(nameOfBuilding));
                 lessonBuilding.showInfoWindow();
 
@@ -187,6 +206,7 @@ public class CheckParkingActivity extends AppCompatActivity implements OnMapRead
 
                 mMap.animateCamera(center);
             }
+
 
             public void onNothingSelected(AdapterView<?> parent) {
             }
@@ -216,7 +236,7 @@ public class CheckParkingActivity extends AppCompatActivity implements OnMapRead
      *
      * lat1, lon1 Start point lat2, lon2 End point el1 Start altitude in meters
      * el2 End altitude in meters
-     * @returns Distance in Meters
+     * returns Distance in Meters
      */
     public static long distance(double lat1, double lat2, double lon1,
                                 double lon2, double el1, double el2) {
