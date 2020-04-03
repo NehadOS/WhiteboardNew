@@ -12,13 +12,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/loginUsername"
-        android:hint="@string/loginUsername"/>
+        android:hint="@string/loginUsername"
+        android:importantForAutofill="no"
+        android:inputType="text" />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/loginPassword"
         android:hint="@string/loginPassword"
-        android:inputType="textPassword"/>
+        android:inputType="textPassword"
+        android:autofillHints="no" />
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
